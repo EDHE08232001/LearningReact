@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import Hello from './components/Hello';
+import Message from './components/Message';
+import Profile from './components/Profile';
 
 function App() {
   return (
@@ -7,7 +10,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This my first React App
         </p>
         <a
           className="App-link"
@@ -18,6 +21,11 @@ function App() {
           Learn React
         </a>
       </header>
+      <Hello></Hello>
+      <Message />
+      <Profile firstName="Edward" lastName="He">
+        This is a profile of a person
+      </Profile>
     </div>
   );
 }
